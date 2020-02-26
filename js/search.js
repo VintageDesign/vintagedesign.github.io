@@ -30,11 +30,11 @@
         if(outSearch[1] == '|y ') {
           window.location.href = 'https://www.youtube.com/results?search_query=' + outSearch[2];
         } else {
-          window.location.href = 'https://www.google.es/search?site=webhp&q=' + outSearch[2];
+          window.location.href = 'https://www.google.com/search?site=webhp&q=' + outSearch[2];
         }
         return;
       }
-      window.location.href = 'https://duckduckgo.com/?q=' + search;
+      window.location.href = 'https://google.com/?q=' + search;
     }
   }
 })()
