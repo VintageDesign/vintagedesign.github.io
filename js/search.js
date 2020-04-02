@@ -34,7 +34,7 @@
         }
         return;
       }
-      window.location.href = 'https://google.com/?q=' + search;
+      window.location.href = 'https://google.com/search?q=' + search;
     }
   }
 })()

@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+
 body {
   font-family: 'Roboto', sans-serif;
   color: #fff;
@@ -13,6 +14,11 @@ body {
   background-repeat: no-repeat;
 }
 
+a.link {
+  color: white;
+  margin: 0px 10px;
+  
+}
 span.hidden {
   opacity: 0;
 }
@@ -124,12 +130,16 @@ section {
   color: #b2b2b2;
 }
 
+.links{
+  display: grid;
+}
 .card-brown {
   width: 354px;
   height: auto;
   padding: 32px;
-  background: rgba(136, 75, 53, 0.7);
+  background-color: rgba(0, 0, 255, .5);
   border-radius: 5px;
+  margin: 0px 4px;
 }
 
 .card-brown .cat-group .cat {
