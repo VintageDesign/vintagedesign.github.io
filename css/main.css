@@ -3,13 +3,13 @@
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  background: url('../img/space.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 
 body {
+  background: url('../img/space.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
   font-family: 'Roboto', sans-serif;
   color: #fff;
   margin:0px 0px;
