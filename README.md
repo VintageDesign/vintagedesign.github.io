@@ -1,6 +1,4 @@
 # Startpage
+Really simple landing page. Has some bells and whistles in the background not that
+matyiu (the original creator) created.
 
-My code sucks because I'm still a beginner.
-
-## Commands
-Use **|g** to search in Google and use **|y** to search in Youtube
