@@ -10,7 +10,9 @@ def main():
             if filename != "template.md":
                 with open(os.path.join(os.getcwd() + '/food' , filename), 'r') as input_file:
                     print("Generating recipe for:", filename)
+                    out_string += "<hr>"
                     out_string += markdown2.markdown(input_file.read())
+
 
         output_file.write(out_string)
 
