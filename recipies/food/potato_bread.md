@@ -1,5 +1,5 @@
 # Potato Bread:
-Jakes Potato Bread
+Jake's Potato Bread
 
 ## Ingredients:
 - 6 Cups Flour
