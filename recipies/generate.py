@@ -6,7 +6,7 @@ def main():
     with open('index.html', 'w+') as output_file:
         with open(os.path.join(os.getcwd(), 'base.html'), 'r') as input_file:
             out_string = input_file.read()
-        for filename in os.listdir(os.path.join(os.getcwd(), 'food')):
+        for filename in sorted(os.listdir(os.path.join(os.getcwd(), 'food'))):
             if filename != "template.md":
                 with open(os.path.join(os.getcwd() + '/food' , filename), 'r') as input_file:
                     print("Generating recipe for:", filename)
