@@ -6,7 +6,10 @@
   searchGroup.addEventListener('mouseover', showSearch);
   searchGroup.addEventListener('mouseleave', hideSearch);
   searchInput.addEventListener('keypress', search);
-  searchIcon.addEventListener('click', search)
+  searchIcon.addEventListener('click', handleIconClick);
+  // Touch-friendly: show search on focus, keep open while focused
+  searchInput.addEventListener('focus', showSearch);
+  searchInput.addEventListener('blur', hideSearch)
 
   function showSearch() {
     searchIcon.classList.add('icon-animation');
@@ -18,6 +21,15 @@
     if (search == '') {
       searchIcon.classList.remove('icon-animation');
       searchInput.classList.remove('search-animation');
+    }
+  }
+
+  function handleIconClick(e) {
+    if (!searchInput.classList.contains('search-animation')) {
+      showSearch();
+      searchInput.focus();
+    } else {
+      search(e);
     }
   }
 
